@@ -2,21 +2,19 @@
 
 A Codex Skill for turning a topic into a 7-8 page PDF zine deck using a loud K-pop apocalypse ransom-zine visual style.
 
-The skill is optimized for visually driven PDF decks: short headlines, sparse captions, torn paper layouts, crumpled black texture, ransom-note typography, lime/blue/red accents, and bottom masthead strips.
+The skill is optimized for visually driven PDF decks: short headlines, sparse captions, photo/AI-image cutouts, torn paper layouts, crumpled black texture, ransom-note typography, lime/blue/red accents, and bottom masthead strips.
 
-## Example Output
+## Style Reference
 
-Prompt:
+Single-slide reference:
 
-```text
-使用 $zine-deck-maker，主题：后人类便利店，做 7 页，16:9，中文文案，输出 PDF。
-```
+![K-pop apocalypse ransom zine 16:9 reference](assets/01-subway-idol-signal-16x9.png)
 
-Preview:
+Contact sheet:
 
-![Posthuman convenience store example](examples/posthuman-convenience-store-16x9/contact-sheet.png)
+![K-pop apocalypse ransom zine contact sheet](assets/style-contact-sheet.png)
 
-Sample PDF: [posthuman-convenience-store-16x9.pdf](examples/posthuman-convenience-store-16x9/posthuman-convenience-store-16x9.pdf)
+The visual target is the reference style above: a photo-real subject cutout, thick torn white paper border, oversized distressed type, dense sticker collage, rough scan texture, and a saturated bottom masthead band.
 
 ## What It Does
 
@@ -24,6 +22,7 @@ Sample PDF: [posthuman-convenience-store-16x9.pdf](examples/posthuman-convenienc
 - Plans 7-8 pages as a `PPT 内容制作大师`.
 - Writes short deck-ready Chinese or English copy depending on the user request.
 - Generates a PDF-first visual deck in the bundled zine collage style.
+- Requires a strong subject or product cutout on each page; simple vector symbols are not enough for this style.
 - Avoids dense reports, clean corporate templates, watermarks, QR codes, copied logos, and exact source names.
 
 ## Install
@@ -58,7 +57,10 @@ Use $zine-deck-maker. Topic: an AI music label. Make 8 pages, PDF output.
 
 ```text
 SKILL.md
+references/style-guide.md
 references/style-spec.json
+assets/01-subway-idol-signal-16x9.png
+assets/style-contact-sheet.png
 agents/openai.yaml
 ```
 

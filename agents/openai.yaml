@@ -1,4 +1,4 @@
 interface:
   display_name: "Zine Deck Maker"
-  short_description: "Turn topics into zine-style PDF decks"
-  default_prompt: "Use $zine-deck-maker to turn this topic into a 7-page ransom-zine PDF deck."
+  short_description: "Turn topics into K-pop ransom-zine PDF decks"
+  default_prompt: "Use $zine-deck-maker to turn this topic into a 7-page K-pop apocalypse ransom-zine PDF deck with photo cutouts."
