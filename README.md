@@ -2,7 +2,7 @@
 
 A Codex Skill for turning a topic into a 7-8 page PDF zine deck using a loud K-pop apocalypse ransom-zine visual style.
 
-The skill is optimized for visually driven PDF decks: short headlines, sparse captions, photo/AI-image cutouts, torn paper layouts, crumpled black texture, ransom-note typography, lime/blue/red accents, and bottom masthead strips.
+The skill is optimized for visually driven PDF decks: short headlines, sparse captions, content-relevant cutouts, torn paper layouts, crumpled black texture, ransom-note typography, lime/blue/red accents, and bottom masthead strips.
 
 ## Style Reference
 
@@ -14,7 +14,7 @@ Contact sheet:
 
 ![K-pop apocalypse ransom zine contact sheet](assets/style-contact-sheet.png)
 
-The visual target is the reference style above: a photo-real subject cutout, thick torn white paper border, oversized distressed type, dense sticker collage, rough scan texture, and a saturated bottom masthead band.
+The visual target is the reference style above: thick torn white paper borders, oversized distressed type, dense sticker collage, rough scan texture, and a saturated bottom masthead band. The main cutout should be chosen from the content; it does not have to be a person.
 
 ## What It Does
 
@@ -22,7 +22,7 @@ The visual target is the reference style above: a photo-real subject cutout, thi
 - Plans 7-8 pages as a `PPT 内容制作大师`.
 - Writes short deck-ready Chinese or English copy depending on the user request.
 - Generates a PDF-first visual deck in the bundled zine collage style.
-- Requires a strong subject or product cutout on each page; simple vector symbols are not enough for this style.
+- Requires a strong content-relevant cutout on each page; it can be a person, product, object, device, interface, receipt, package, scene fragment, or prop. Simple vector symbols and unrelated repeated people are not enough for this style.
 - Avoids dense reports, clean corporate templates, watermarks, QR codes, copied logos, and exact source names.
 
 ## Install

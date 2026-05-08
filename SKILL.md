@@ -1,6 +1,6 @@
 ---
 name: zine-deck-maker
-description: "Create visually driven 7-8 page PDF zine decks from a user topic using the bundled K-pop apocalypse ransom-zine style, including photo/AI-image cutouts, oversized distressed typography, torn paper collage, stickers, and bottom masthead bands. Use when Codex is asked to turn a topic, idea, product, trend, campaign, story, or brief into a PDF, deck, PPT, slide deck, poster deck, or zine in this style."
+description: "Create visually driven 7-8 page PDF zine decks from a user topic using the bundled K-pop apocalypse ransom-zine style, faithfully matching the reference's collage grammar: content-relevant cutouts, oversized distressed typography, torn paper, stickers, scan texture, and bottom masthead bands. Use when Codex is asked to turn a topic, idea, product, trend, campaign, story, or brief into a PDF, deck, PPT, slide deck, poster deck, or zine in this style."
 ---
 
 # Zine Deck Maker
@@ -29,16 +29,17 @@ Default to PDF output only. Use an editable deck or intermediate source file onl
 3. Create a light 7-8 page content plan as a PPT content master.
    - Adopt the role: `PPT 内容制作大师`.
    - Generate 7 or 8 page concepts with short, deck-ready copy.
-   - For each page, define: page role, main headline, short caption, sticker/microcopy words, visual direction, subject/cutout, prop, and bottom masthead word.
+   - For each page, define: page role, main headline, short caption, sticker/microcopy words, content-relevant main cutout, supporting props, and bottom masthead word.
    - Keep copy punchy and sparse. Do not write a long article, speaker script, or dense business report unless the user asks.
    - Prefer a narrative arc: cover, tension/context, key idea, 3-4 themed spreads, closing punchline or manifesto.
-   - For abstract topics, personify the idea as a performer, clerk, stylist, courier, idol, dancer, or youth-culture character so the page still has a strong photo cutout.
+   - For abstract topics, choose a concrete visual noun that explains the page: object, place, machine, interface, product, receipt, cassette, device, costume, shelf, poster wall, performer, fan, founder, clerk, or other relevant cutout.
+   - Do not default to a person on every page. Use people only when the page is about performers, users, founders, fans, workers, identity, or culture.
 
 4. Produce the PDF deck.
    - Use the bundled style spec to drive every page.
    - Prefer a 9:16 poster-zine deck unless the user requests widescreen.
-   - Build visually first: large photo/AI-image portrait cutout or product cutout, oversized distressed headline, sticker labels, side captions, bottom masthead strip, tactile paper texture.
-   - Use generated raster imagery when needed. Do not substitute simple geometric icons for the main subject.
+   - Build visually first: large content-relevant cutout, oversized distressed headline, sticker labels, side captions, bottom masthead strip, tactile paper texture.
+   - Use generated raster imagery when needed. Do not substitute simple geometric icons for the main visual.
    - Use the Presentations workflow/tools when available for reliable deck creation, rendering, visual QA, and PDF export.
    - Deliver the final PDF path. Mention any working PPTX/source only if it is useful or requested.
 
@@ -47,7 +48,7 @@ Default to PDF output only. Use an editable deck or intermediate source file onl
 Load `references/style-spec.json` before designing pages. Treat these constraints as mandatory:
 
 - Use crumpled black or distressed fabric backgrounds.
-- Use a large central or center-right photo-real portrait/character/product cutout with thick irregular torn white paper backing.
+- Use a large central or center-right cutout with thick irregular torn white paper backing. The cutout can be a person, product, object, device, place, interface, receipt, package, cassette, prop, or scene fragment, but it must be directly tied to the page content.
 - Use huge distressed sans-serif headline typography as a graphic object. It should occupy major canvas area and overlap the cutout/backing.
 - Use tilted sticker text blocks in acid lime, electric blue, alert red, black, and paper white.
 - Use narrow editorial side captions, small mock issue labels, barcode stripes, and a thumbnail/inset when useful.
@@ -61,13 +62,13 @@ Load `references/style-spec.json` before designing pages. Treat these constraint
 
 Do not accept an output as style-faithful unless it clearly has all of these:
 
-- A photo-real or AI-image cutout subject with torn white paper border.
+- A content-relevant cutout with torn white paper border.
 - A huge distressed headline comparable to `STATIC POP`, `BUNKER FIT`, `RIPPED SIGNAL`, or `LAST LOOK`.
 - At least three tilted sticker labels.
 - Dense scanned paper texture, wrinkles, halftone, and rough edges.
 - A saturated bottom masthead band, usually electric blue, lime, or red.
 
-If a page only has black background, neon colors, vector shapes, and footer strips, it has not preserved this style. Revise before delivery.
+If a page only has black background, neon colors, vector shapes, and footer strips, it has not preserved this style. If every page repeats a similar person who does not explain the slide claim, the deck has not preserved the content logic. Revise before delivery.
 
 ## Content Plan Format
 
@@ -78,8 +79,8 @@ Use this compact structure internally before building:
    Headline:
    Caption:
    Sticker words:
-   Subject/cutout:
-   Prop:
+   Main cutout:
+   Supporting props:
    Bottom masthead:
    Visual direction:
 ```
@@ -94,5 +95,5 @@ Before final delivery, verify:
 - The final artifact is a PDF unless the user asked for another format.
 - Text is short enough to read as poster/deck copy.
 - Every page visibly follows the zine style rather than a corporate or minimalist slide template.
-- Every page has a strong cutout subject or product image, not just geometric symbols.
+- Every page has a strong content-relevant cutout, not just geometric symbols and not an unrelated repeated person.
 - No forbidden watermarks, QR codes, platform marks, copied logos, exact source names, or exact source text appear.
