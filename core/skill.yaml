@@ -1,0 +1,37 @@
+name: zine-deck-maker
+version: 0.2.0
+license: MIT
+description: >
+  Portable agent skill for turning a user topic into a 7-8 page
+  visual PDF or slide deck in a K-pop apocalypse ransom-zine style.
+default_output: PDF
+default_page_count: "7-8"
+default_aspect_ratio: "9:16 unless the user asks for widescreen; 16:9 is recommended for PPT decks"
+default_content_depth: "light planning: headline, short caption, key points, sticker words, visual direction"
+required_input:
+  - topic
+optional_inputs:
+  - page_count
+  - aspect_ratio
+  - language
+  - output_format
+  - content_depth
+style_sources:
+  - core/style-spec.json
+  - core/style-guide.md
+  - assets/style-contact-sheet.png
+  - assets/01-subway-idol-signal-16x9.png
+platform_adapters:
+  codex: adapters/codex/SKILL.md
+  claude_code_agent: adapters/claude-code/agent.md
+  claude_code_command: adapters/claude-code/command.md
+  cursor: adapters/cursor/rules.md
+  chatgpt: adapters/chatgpt/custom-instructions.md
+  generic_agent: adapters/generic/system-prompt.md
+quality_gates:
+  - 7 or 8 pages unless the user specifies otherwise
+  - short deck-ready copy
+  - content-relevant cutout per page
+  - torn paper, crumpled black texture, distressed type, stickers, bottom masthead
+  - no unrelated repeated people
+  - no watermarks, QR codes, platform marks, copied logos, exact source names, or exact source text

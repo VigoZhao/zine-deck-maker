@@ -1,0 +1,88 @@
+{
+  "style_name": "k-pop-apocalypse-ransom-zine-style",
+  "style_summary": "A maximalist K-pop fashion zine collage style built from a central portrait cutout, crumpled monochrome paper texture, skewed ransom-note typography, loud sticker blocks, saturated lime/blue/red accents, and a bold bottom masthead band.",
+  "environment_variables": {
+    "SUBJECT": "main subject, performer, model, musician, dancer, stylist, or youth-culture character",
+    "SUBJECT_ACTION": "looking off-frame, posing with attitude, holding a prop, leaning into the camera, or standing in a cutout portrait pose",
+    "PRODUCT_OR_PROP": "compact camera, wired earbuds, lip gloss, denim jacket, cassette, charm bag, safety pin accessory, or styling prop",
+    "LOCATION": "studio wall, backstage corner, bedroom mirror, subway entrance, alley poster wall, roof landing, or DIY magazine set",
+    "BACKGROUND_ELEMENTS": "crumpled black paper, distressed denim texture, torn white paper edges, photocopy grain, halftone noise, tape marks, and rough scanned shadows",
+    "MAIN_TEXT": "oversized warped headline or sticker headline",
+    "SECONDARY_TEXT": "short editorial caption, mock issue line, styling note, lyric-like fragment, or repeated microcopy",
+    "ACCENT_SYMBOL": "red star, diagonal sticker block, torn label, arrow tab, barcode stripe, or paper shard",
+    "WARDROBE_STYLE": "post-apocalyptic K-pop styling, distressed denim, glossy makeup, messy hair, bright accessory accents, layered streetwear",
+    "ASPECT_RATIO": "9:16 or 16:9"
+  },
+  "core_visual_identity": {
+    "overall_style_category": [
+      "K-pop fashion zine poster",
+      "Y2K pop-punk collage",
+      "apocalypse editorial cover",
+      "ransom-note typographic magazine layout",
+      "DIY street fashion flyer"
+    ],
+    "composition": "The subject is a large central cutout with a thick torn-paper white border. Oversized typography sits around and behind the subject, often rotated, clipped, or partially hidden. Small editorial captions fill the side margins. A saturated bottom masthead strip anchors the frame.",
+    "subject_placement": "Place the subject in the lower center or center-right. Crop tightly around the head and upper torso. Let hair, shoulders, and cutout paper edges break into surrounding text blocks.",
+    "camera_or_perspective": "Close portrait framing, slightly low or straight-on camera, fashion editorial gaze, off-frame glance, casual imperfect hair movement, and flash-lit skin texture.",
+    "typography": "Use heavy warped sans-serif, sticker-style block letters, slanted labels, mixed scale words, and mock ransom-note layering. Main type should feel pasted, tilted, and loud rather than typeset cleanly.",
+    "palette": {
+      "crumpled_black": "#171717",
+      "charcoal_gray": "#3A3A3A",
+      "paper_white": "#F5F3EE",
+      "acid_lime": "#A8F04A",
+      "electric_blue": "#1713F2",
+      "alert_red": "#F2053A",
+      "ink_black": "#050505",
+      "skin_warmth": "#F2B69B"
+    },
+    "graphic_elements": [
+      "torn white portrait backing",
+      "diagonal lime banner",
+      "blue sticker tabs",
+      "red star stamped across one eye or near the face",
+      "black-and-white Pop-style word blocks",
+      "small side editorial captions",
+      "bottom masthead strip with thumbnail inset",
+      "photocopy grain and paper wrinkles"
+    ],
+    "texture_and_finish": "The finish should look physically assembled and scanned: crumpled paper, Xerox noise, halftone speckles, uneven edges, slight print offset, rough shadows, and imperfect layer alignment.",
+    "lighting": "Use hard magazine flash on the subject with glossy highlights on lips, cheeks, and accessories. Keep the background flatter, darker, and more tactile.",
+    "mood": "Chaotic, playful, rebellious, fashion-forward, post-apocalyptic, pop-punk, sarcastic, youthful, and editorial."
+  },
+  "composition_rules": [
+    "Start with a dark crumpled paper or distressed fabric background.",
+    "Place a large portrait cutout in the foreground with an irregular white ripped-paper backing.",
+    "Use one giant headline as a graphic object, not a normal text block.",
+    "Add at least three tilted sticker labels in lime, blue, red, black, or white.",
+    "Keep side captions short, narrow, and editorial.",
+    "Use a saturated bottom strip as a masthead or issue footer.",
+    "Let text overlap the cutout edge, but keep the subject's face readable.",
+    "Add one symbolic accent such as a red star, arrow, label, or barcode stripe."
+  ],
+  "typography_rules": [
+    "Main headline: heavy warped display sans-serif, white or black, slightly rotated.",
+    "Sticker text: extra-bold condensed sans-serif, italic when useful, high contrast.",
+    "Side captions: narrow white sans-serif, small size, tight columns.",
+    "Footer masthead: oversized black display type on electric blue, lime, or red.",
+    "Avoid elegant serif typography and clean corporate spacing."
+  ],
+  "photography_or_illustration_direction": "Use a fashion portrait or photo-real cutout treatment. The person should feel flash-photographed, close, imperfect, and pasted onto paper. Hair can be messy, makeup glossy, accessories bright, and styling intentionally survival-pop.",
+  "do_list": [
+    "Use crumpled black texture as the base.",
+    "Create a tactile torn-paper portrait cutout.",
+    "Use loud diagonal sticker typography.",
+    "Use lime, electric blue, and red as aggressive accents.",
+    "Keep the visual hierarchy as subject, headline, sticker words, footer.",
+    "Add rough scan grain and photocopy texture."
+  ],
+  "avoid_list": [
+    "Minimalist poster layouts",
+    "Luxury fashion cleanliness",
+    "Soft pastel lifestyle palettes",
+    "Smooth vector-only graphics",
+    "Glossy 3D typography",
+    "Platform watermarks, usernames, creator IDs, QR codes, app marks, or copied publication logos",
+    "Replicating exact source text or names"
+  ],
+  "negative_prompt": "minimalist design, clean corporate layout, smooth gradients, luxury editorial polish, pastel lifestyle palette, glossy 3D typography, elegant serif masthead, empty whitespace, platform watermark, username, QR code, creator ID, app logo, copied publication logo, exact source text, exact source name"
+}
