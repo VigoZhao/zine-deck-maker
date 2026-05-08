@@ -10,6 +10,7 @@ Aspect ratio: <9:16 or 16:9>
 Language: <Chinese or English>
 Output: <PDF, PPTX, or both>
 Content depth: <visual-first or content-first>
+Image provider: <GPT-image, Midjourney, Flux, SDXL, Ideogram, Firefly, internal model, manual, or unspecified>
 ```
 
 ## Content Planning Prompt
@@ -51,6 +52,21 @@ Supporting props: <props>
 Use dark crumpled black paper, torn white paper backing, distressed photocopy grain, halftone speckles, tilted sticker blocks in acid lime, electric blue, alert red, paper white, and ink black. Add a saturated bottom masthead band and rough scan shadows.
 
 Leave clear areas for editable text overlay. Do not include readable text unless explicitly provided. Do not include watermarks, QR codes, platform marks, app logos, copied publication logos, exact source names, or exact source text.
+```
+
+## Provider-Agnostic Prompt Export
+
+Use this when the host platform cannot generate images directly or the user wants to use their own model:
+
+```text
+Image generation provider: <user-selected provider or "bring your own model">
+Page: <page number and role>
+Aspect ratio: <9:16 or 16:9>
+Main cutout: <content-relevant cutout>
+Supporting props: <props>
+Style: K-pop apocalypse ransom-zine collage, crumpled black paper, torn white paper backing, distressed photocopy texture, halftone speckles, tilted acid-lime/electric-blue/alert-red stickers, rough scan shadows, bottom masthead strip.
+Text handling: leave label and headline areas blank or abstract; final readable copy will be added later in the deck.
+Negative prompt: watermarks, QR codes, platform marks, app logos, copied publication logos, exact source names, exact source text, clean corporate layout, minimalist whitespace, glossy 3D typography.
 ```
 
 ## QA Prompt

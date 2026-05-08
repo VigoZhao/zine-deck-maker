@@ -16,9 +16,13 @@ optional_inputs:
   - language
   - output_format
   - content_depth
+  - image_generation_provider
+  - image_generation_model
+  - image_generation_method
 style_sources:
   - core/style-spec.json
   - core/style-guide.md
+  - core/image-generation.md
   - assets/style-contact-sheet.png
   - assets/01-subway-idol-signal-16x9.png
 platform_adapters:
@@ -35,3 +39,17 @@ quality_gates:
   - torn paper, crumpled black texture, distressed type, stickers, bottom masthead
   - no unrelated repeated people
   - no watermarks, QR codes, platform marks, copied logos, exact source names, or exact source text
+image_generation:
+  dependency_policy: "provider-agnostic"
+  default_behavior: "use whatever image generation or design tool the host environment provides"
+  fallback_behavior: "if no image tool is available, output page-by-page visual prompts and layout directions"
+  example_provider_note: "example outputs in this repository were made with GPT-image support, but GPT-image is not required"
+  compatible_provider_examples:
+    - GPT-image
+    - Midjourney
+    - Flux
+    - Stable Diffusion or SDXL
+    - Ideogram
+    - Firefly
+    - internal image models
+    - manual Photoshop/Figma/Canva design

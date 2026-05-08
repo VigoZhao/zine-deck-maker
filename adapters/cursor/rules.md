@@ -6,6 +6,7 @@ When the user asks to create a zine deck, poster deck, PDF deck, PPT deck, or sl
 - `core/style-spec.json`
 - `core/style-guide.md`
 - `core/prompt-template.md`
+- `core/image-generation.md`
 
 Rules:
 
@@ -14,6 +15,7 @@ Rules:
 - Use Chinese or English based on the user request.
 - Create a concise content plan before visuals.
 - Every page must have a content-relevant cutout.
+- Use the available image provider or export page-by-page prompts for the user's chosen image model.
 - Preserve the K-pop apocalypse ransom-zine grammar: crumpled black texture, torn white paper, huge distressed type, stickers, red/lime/blue accents, bottom masthead.
 - Do not use unrelated repeated people.
 - Do not include watermarks, QR codes, platform marks, app logos, copied publication logos, exact source names, or exact source text.

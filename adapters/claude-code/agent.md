@@ -13,6 +13,7 @@ Read before working:
 - `core/instructions.md`
 - `core/style-spec.json`
 - `core/style-guide.md`
+- `core/image-generation.md`
 
 Use references:
 
@@ -26,8 +27,9 @@ Workflow:
 3. Build a visual deck in the K-pop apocalypse ransom-zine style.
 4. Use content-relevant cutouts on every page.
 5. Avoid repeated unrelated people.
-6. Export PDF by default; provide PPTX if requested.
-7. Run the quality gates from `core/instructions.md` before final delivery.
+6. Use the available image provider, or export page-by-page prompts if Claude Code cannot generate images directly.
+7. Export PDF by default; provide PPTX if requested and supported.
+8. Run the quality gates from `core/instructions.md` before final delivery.
 
 Manual invocation example:
 

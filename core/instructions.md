@@ -6,6 +6,7 @@ Use this platform-agnostic workflow to create a visual zine deck from a user top
 
 - Required: a topic, idea, product, trend, story, campaign, or brief.
 - Optional: page count, aspect ratio, output format, language, content depth.
+- Optional: image generation provider, image generation model, or manual design method.
 - Defaults: 7-8 pages, PDF output, light planning, visual-first pages.
 
 If the topic is missing, ask for it. If the topic is broad, proceed and interpret it as an editorial theme.
@@ -19,10 +20,17 @@ Act as a `PPT 内容制作大师`: turn the topic into a concise deck narrative 
 1. Read the style sources:
    - `core/style-spec.json`
    - `core/style-guide.md`
+   - `core/image-generation.md`
    - `assets/style-contact-sheet.png`
    - `assets/01-subway-idol-signal-16x9.png`
 
-2. Create a 7-8 page plan. For each page define:
+2. Choose the image generation route:
+   - If the environment has image generation, use its available model.
+   - If the user names a provider such as GPT-image, Midjourney, Flux, SDXL, Ideogram, Firefly, or an internal model, adapt the prompts to that provider.
+   - If no image tool is available, output page-by-page visual prompts and layout directions so the user can paste them into their own image model or design tool.
+   - Do not imply that GPT-image is required. The examples may use GPT-image, but the skill is provider-agnostic.
+
+3. Create a 7-8 page plan. For each page define:
    - Page role
    - Main headline
    - Core claim or short caption
@@ -33,13 +41,13 @@ Act as a `PPT 内容制作大师`: turn the topic into a concise deck narrative 
    - Bottom masthead word
    - Visual direction
 
-3. Build the deck:
+4. Build the deck:
    - Use the K-pop apocalypse ransom-zine grammar.
    - Keep copy sparse and readable.
    - Prioritize content clarity when the user asks for strategy, explanation, pitch, or case content.
    - Prioritize visual impact when the user asks for poster-like zine pages.
 
-4. Export:
+5. Export:
    - Default to PDF.
    - Also provide PPTX/source files if the user asks or the environment supports it.
 
@@ -79,3 +87,4 @@ Before delivery, verify:
 - Content is readable at slide size.
 - There are no watermarks, QR codes, platform marks, copied logos, exact source names, or exact source text.
 - If every page repeats a similar unrelated person, revise.
+- If the host platform cannot render images or PDFs, deliver the content plan, image prompts, and layout instructions instead of pretending a finished deck was created.

@@ -4,6 +4,8 @@ A portable Agent Skill package for turning a topic into a 7-8 page PDF or slide 
 
 It is not limited to Codex. The core workflow is platform-agnostic, and adapters are included for Codex, Claude Code, Cursor, ChatGPT, and generic agents.
 
+Important: the example outputs were produced in an environment with GPT-image support. GPT-image is not required. You can use any image generation model or manual design tool by following the provider slot in `core/image-generation.md`.
+
 ## Preview
 
 Style reference:
@@ -25,6 +27,8 @@ Example output preview:
 - Writes short deck-ready Chinese or English copy.
 - Generates a PDF-first zine deck with torn paper, crumpled black texture, ransom typography, lime/blue/red accents, and bottom masthead strips.
 - Uses content-relevant cutouts on every page: person, product, object, device, interface, receipt, package, scene fragment, map, machine, shelf, or prop.
+- Lets users bring their own image model: GPT-image, Midjourney, Flux, SDXL, Ideogram, Firefly, internal models, or manual design tools.
+- Falls back to page-by-page image prompts when the current platform cannot generate images directly.
 - Avoids unrelated repeated people, clean corporate templates, watermarks, QR codes, copied logos, and exact source names.
 
 ## Repository Structure
@@ -35,6 +39,7 @@ zine-deck-maker/
 ├── core/
 │   ├── skill.yaml                   # platform-neutral metadata
 │   ├── instructions.md              # platform-neutral workflow
+│   ├── image-generation.md          # bring-your-own image model slot
 │   ├── style-spec.json              # machine-readable style rules
 │   ├── style-guide.md               # human-readable style guide
 │   └── prompt-template.md           # reusable prompt templates
@@ -122,6 +127,41 @@ adapters/generic/system-prompt.md
 
 Attach or reference the `core/` files and `assets/` images as the skill's source of truth.
 
+## Bring Your Own Image Model
+
+This skill separates the deck workflow from the image generator.
+
+If your platform has native image generation, use that. If it does not, ask the agent to export one visual prompt per page, then paste those prompts into your chosen image model or design tool.
+
+Supported routes include:
+
+- GPT-image
+- Midjourney
+- Flux
+- Stable Diffusion / SDXL
+- Ideogram
+- Adobe Firefly
+- internal image models
+- manual Photoshop, Figma, Canva, or other design workflows
+
+Use this field in your request when you want to specify a provider:
+
+```text
+Image provider: Midjourney
+```
+
+or:
+
+```text
+Image provider: my internal image model
+```
+
+If no image provider is available, use:
+
+```text
+Use zine-deck-maker. Topic: AI 音乐厂牌. Make 7 pages, 16:9, Chinese. Output page-by-page image prompts and deck layout instructions.
+```
+
 ## Universal Request Template
 
 ```text
@@ -132,6 +172,7 @@ Aspect ratio: <9:16 or 16:9>
 Language: <Chinese or English>
 Output: <PDF, PPTX, or both>
 Content depth: <visual-first or content-first>
+Image provider: <GPT-image, Midjourney, Flux, SDXL, Ideogram, Firefly, internal model, manual, or unspecified>
 ```
 
 ## Default Behavior
@@ -142,6 +183,7 @@ Content depth: <visual-first or content-first>
 - Page content: headline, short caption, sticker words, visual direction
 - Content-first option: core claim plus 2-3 key points per page
 - Style source: `core/style-spec.json`
+- Image generation: provider-agnostic; see `core/image-generation.md`
 
 ## License
 

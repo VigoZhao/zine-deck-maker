@@ -10,6 +10,7 @@ Use the platform-neutral core files:
 - `core/instructions.md`
 - `core/style-spec.json`
 - `core/style-guide.md`
+- `core/image-generation.md`
 - `core/prompt-template.md`
 
 Use visual references:
@@ -28,6 +29,8 @@ Use visual references:
 ## Codex Notes
 
 - Use image generation for raster plates when needed.
+- GPT-image is one possible provider, not a requirement.
+- If the current environment lacks image generation, output page-by-page prompts for the user's chosen model.
 - Use presentation/PDF tooling when available for deck rendering and QA.
 - Keep generated project assets inside the current workspace.
 - Root `SKILL.md` is kept for direct Codex installation compatibility.

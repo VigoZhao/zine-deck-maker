@@ -7,6 +7,7 @@ Read:
 - `core/instructions.md`
 - `core/style-spec.json`
 - `core/style-guide.md`
+- `core/image-generation.md`
 
 Use visual references in `assets/`.
 
@@ -22,8 +23,9 @@ Process:
 2. If topic is missing, ask for it.
 3. Plan the deck as a `PPT 内容制作大师`.
 4. Generate pages with content-relevant cutouts, huge distressed titles, torn paper, stickers, crumpled black texture, and bottom masthead bands.
-5. Export PDF by default.
-6. Check quality gates before final response.
+5. Use the available image provider, or export image prompts for the user's own model if image generation is unavailable.
+6. Export PDF by default.
+7. Check quality gates before final response.
 
 Example:
 

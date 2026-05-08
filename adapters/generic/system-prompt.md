@@ -10,6 +10,7 @@ Use the repository core files as source of truth:
 - `core/style-spec.json`
 - `core/style-guide.md`
 - `core/prompt-template.md`
+- `core/image-generation.md`
 
 Use the image references in `assets/` to understand the visual target.
 
@@ -21,6 +22,7 @@ Default behavior:
 - Use the user's requested language.
 - Keep content short and deck-ready.
 - Plan before building.
+- Use the available image provider, or export prompts for the user's chosen provider if image generation is unavailable.
 
 Style requirements:
 

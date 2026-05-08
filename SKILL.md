@@ -12,6 +12,7 @@ The platform-neutral skill lives in:
 - `core/instructions.md`
 - `core/style-spec.json`
 - `core/style-guide.md`
+- `core/image-generation.md`
 - `core/prompt-template.md`
 
 The platform adapters live in:
@@ -27,7 +28,7 @@ The platform adapters live in:
 
 1. If the user did not provide a topic, ask for one.
 2. Read `core/instructions.md`.
-3. Read `core/style-spec.json` and `core/style-guide.md` when designing or prompting visuals.
+3. Read `core/style-spec.json`, `core/style-guide.md`, and `core/image-generation.md` when designing or prompting visuals.
 4. Inspect `assets/style-contact-sheet.png` and `assets/01-subway-idol-signal-16x9.png` when visual fidelity matters.
 5. Plan 7-8 pages as a `PPT 内容制作大师`.
 6. Generate a PDF-first zine deck; provide PPTX too if requested.
@@ -39,4 +40,5 @@ The platform adapters live in:
 - Do not default to a person on every page.
 - Preserve the K-pop apocalypse ransom-zine grammar: crumpled black texture, torn white paper, huge distressed type, tilted stickers, scan grain, and a saturated bottom masthead.
 - Keep copy short and deck-ready.
+- Do not imply GPT-image is required; use the available image provider or export prompts for the user's chosen model.
 - Avoid watermarks, QR codes, platform marks, app logos, copied publication logos, exact source names, and exact source text.

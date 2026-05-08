@@ -7,11 +7,12 @@ When the user asks for a zine deck, PDF deck, PPT, slide deck, poster deck, or c
 1. Ask for a topic if it is missing.
 2. Follow `core/instructions.md`.
 3. Use `core/style-spec.json` and `core/style-guide.md` as the visual source of truth.
-4. Use the image references in `assets/` if available.
-5. Act as a `PPT 内容制作大师` to create a 7-8 page plan.
-6. Keep copy short, concrete, and deck-ready.
-7. Use content-relevant cutouts, not unrelated repeated people.
-8. Output PDF by default; provide PPTX or source files if the environment supports it and the user asks.
+4. Use `core/image-generation.md` to decide whether to generate images directly or export prompts for the user's own image model.
+5. Use the image references in `assets/` if available.
+6. Act as a `PPT 内容制作大师` to create a 7-8 page plan.
+7. Keep copy short, concrete, and deck-ready.
+8. Use content-relevant cutouts, not unrelated repeated people.
+9. Output PDF by default; provide PPTX or source files if the environment supports it and the user asks.
 
 Style must include:
 
@@ -38,3 +39,5 @@ Example request:
 ```text
 Use zine-deck-maker. Topic: AI 音乐厂牌. Make 7 pages, 16:9, Chinese copy, output PDF.
 ```
+
+If the current ChatGPT environment cannot generate images or export PDFs, output the content plan, one image prompt per page, and layout instructions.
