@@ -4,6 +4,20 @@ A Codex Skill for turning a topic into a 7-8 page PDF zine deck using a loud K-p
 
 The skill is optimized for visually driven PDF decks: short headlines, sparse captions, torn paper layouts, crumpled black texture, ransom-note typography, lime/blue/red accents, and bottom masthead strips.
 
+## Example Output
+
+Prompt:
+
+```text
+使用 $zine-deck-maker，主题：后人类便利店，做 7 页，16:9，中文文案，输出 PDF。
+```
+
+Preview:
+
+![Posthuman convenience store example](examples/posthuman-convenience-store-16x9/contact-sheet.png)
+
+Sample PDF: [posthuman-convenience-store-16x9.pdf](examples/posthuman-convenience-store-16x9/posthuman-convenience-store-16x9.pdf)
+
 ## What It Does
 
 - Takes a user-provided topic, product, idea, trend, story, or campaign.
