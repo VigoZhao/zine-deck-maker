@@ -61,6 +61,7 @@ references/style-guide.md
 references/style-spec.json
 assets/01-subway-idol-signal-16x9.png
 assets/style-contact-sheet.png
+assets/*.png
 agents/openai.yaml
 ```
 

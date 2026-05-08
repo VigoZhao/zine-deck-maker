@@ -11,6 +11,7 @@ Turn a user-provided topic into a 7-8 page PDF deck with light content planning 
 
 - `assets/01-subway-idol-signal-16x9.png`: strongest single-slide 16:9 reference.
 - `assets/style-contact-sheet.png`: multi-case reference across 9:16 and 16:9.
+- Other PNG files in `assets/`: individual 9:16 and 16:9 sample renders for the four documented style cases.
 
 Default to PDF output only. Use an editable deck or intermediate source file only as a working artifact unless the user explicitly asks for PPTX or source files too.
 
